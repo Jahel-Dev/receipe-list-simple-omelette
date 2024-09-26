@@ -1,0 +1,98 @@
+@import url(normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+html {
+  cursor: url("../image/cursor.png"), auto;
+}
+
+:root {
+  --title-h2: #854632;
+  --preparation-bgc: #fff7fb;
+  --preparation-bullet-color: #7a284e;
+  --span-color: #5f564d;
+  --body-bgc: #f3e5d7;
+}
+
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-bgc);
+}
+
+body.dark-mode {
+  --title-h2: #bfa189; 
+  --preparation-bgc: #2a1c21;
+  --preparation-bullet-color: #d86c9c;
+  --span-color: #a9a096;
+  --body-bgc: #2b1f18; 
+  transition: all 1s ease-out;
+}
+
+.receipe-wrapper {
+  background-color: white;
+  padding: 48px;
+  width: 746px;
+  border-radius: 20px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+img {
+    /* 100% */
+  border-radius: 16px;
+}
+
+.preparation {
+  background-color: var(--preparation-bgc);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.title {
+  margin: 10px;
+}
+
+h2 {
+  color: var(--title-h2);
+}
+
+span {
+  color: var(--span-color);
+  font-weight: 700;
+}
+
+li {
+  margin: 24px;
+}
+
+.bullet-preparation::marker {
+  color: var(--preparation-bullet-color);
+}
+
+.bullet-ingredients::marker {
+  color: var(--title-h2);
+}
+
+.ul-ingredients {
+  padding: 0;
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.instructions-list {
+  color: var(--title-h2);
+  font-weight: 700;
+}
